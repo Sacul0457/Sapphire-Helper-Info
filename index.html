@@ -12,47 +12,60 @@
       <script id="discord:component-embed" type="application/json">
       {
         "component": {
-          "type": 17,
-          "spoiler": false,
-          "accent_color": 7560435,
-          "components": [
-            {
-              "type": 10,
-              "content": "# <:sapphire_purple:1134949394228187197> Sapphire Helper features"
-            },
-            {
-              "type": 10,
-              "content": "## Support Tags\n- **Unanswered** - Self-explanatory.\n- **Not solved** - Added when *Unanswered* is removed.\n- **Waiting for reply** - Posts with not solved where last message is from OP and older than 10 mins.\n\n**Posts with needs-dev-review tag makes it excluded from all of those tags.*"
-            },
-            {
-              "type": 14,
-              "divider": false,
-              "spacing": 2
-            },
-            {
-              "type": 10,
-              "content": "## EPI\n- </epi enable:1341875324413153522>\n  - A msg will automatically send to posts when created saying that Sapphire is experiencing issues. Includes a custom text message if used or the link of  `status_message_id` - a message from ⁠`#status`.\n  - If *sticky* is `True`, a sticky message is created in ⁠`#general`.\n- </epi disable:1341875324413153522> - Ping all users that asked to be notified when the issue is resolved, stop the sticky message.\n- </epi edit:1341875324413153522> - Update epi config.\n- </epi view:1341875324413153522> View epi config."
-            },
-            {
-              "type": 14,
-              "divider": false,
-              "spacing": 2
-            },
-            {
-              "type": 10,
-              "content": "## RTDR\n- Creates a post for users that ask for help in public channels and forward their msgs there.\n- It can be used by reacting ❓/❔ to the message or replying with <@1134607785947037848> `<post title, defaults to Support for ${username}>`.\n- React/reply to the oldest message as only that message and below (from the same user) will be shown in the post created."
-            },
-            {
-              "type": 14,
-              "divider": false,
-              "spacing": 2
-            },
-            {
-              "type": 10,
-              "content": "- </cluster_tracker status:1535865219182502039> - Shows info similar to status page.\n- </cluster_tracker search:1535865219182502039> - Search specific clusters.\n- </cluster_tracker notify_me:1535865219182502039> - Add/remove yourself to be pinged when the threshold is hit."
-            }
-          ]
-        }
+        "type": 17,
+        "spoiler": false,
+        "accent_color": 7560435,
+        "components": [
+          {
+            "type": 10,
+            "content": "# <:sapphire_purple:1134949394228187197> Sapphire Helper"
+          },
+          {
+            "type": 10,
+            "content": "## Support Tags\n- **Unanswered** - Self-explanatory.\n- **Not solved** - Added when *Unanswered* is removed.\n- **Waiting for reply** - Posts with not solved where last message is from OP and older than 10 mins.\n\n**Posts with needs-dev-review tag makes it excluded from all of those tags.*"
+          },
+          {
+            "type": 14,
+            "divider": false,
+            "spacing": 2
+          },
+          {
+            "type": 10,
+            "content": "## EPI\n- </epi enable:1341875324413153522>\n  - A msg will automatically send to posts when created saying that Sapphire is experiencing issues. Includes a custom text message if used or the link of  `status_message_id`.\n  - If *sticky* is `True`, a sticky message is created in ⁠`#general`.\n- </epi disable:1341875324413153522> - Ping all users that asked to be notified when the issue is resolved, stop the sticky message.\n- </epi edit:1341875324413153522> - Update epi config."
+          },
+          {
+            "type": 14,
+            "divider": false,
+            "spacing": 2
+          },
+          {
+            "type": 10,
+            "content": "## RTDR\n- Creates a post for users that ask for help in public channels and forward their msgs there.\n- It can be used by reacting ❓/❔ to the message or replying with <@1134607785947037848> `<post title, defaults to Support for ${username}>`.\n- React/reply to the oldest message as only that message and below (from the same user) will be forwarded."
+          },
+          {
+            "type": 14,
+            "divider": false,
+            "spacing": 2
+          },
+          {
+            "type": 10,
+            "content": "## Tags (`/tag...`)\nSimilar to `/quick-replies` but CE's/Mods can create them.\n\n**Users can use tags too but with a cooldown.*"
+          },
+          {
+            "type": 14,
+            "divider": false,
+            "spacing": 2
+          },
+          {
+            "type": 10,
+            "content": "## Cluster Tracker\nAuto sends a message here when clusters have been offline for more than set `threshold`+ ping opt-in users."
+          },
+          {
+            "type": 10,
+            "content": "- </cluster_tracker status:1535865219182502039> - Shows info similar to status page.\n- </cluster_tracker search:1535865219182502039> - Search specific clusters.\n- </cluster_tracker notify_me:1535865219182502039> - Add/remove yourself to be pinged when the threshold is hit."
+          }
+        ]
+      }
     }
     </script>
   </head>
