@@ -12,38 +12,74 @@
     <script id="discord:component-embed" type="application/json">
     {
         "component": {
-            "type": 17,
-            "spoiler": false,
-            "accent_color": 7560435,
-            "components": [
-              {
-                "type": 10,
-                "content": "## <:sapphire_purple:1134949394228187197> Sapphire Helper features"
-              },
-              {
-                "type": 10,
-                "content": "These commands are fairly easy to understand:\n- </solved:1274997472162349079> & </unsolve:1281211280618950708>\n- </needs-dev-review:1281211280618950709>\n- </lock:1351182554971115590> & </unlock:1351182554971115591>\n- </slowmode:1351182554971115592> (the channels are selected after executing the cmd)\n- </incomplete-post:1396193588676788355>\n- </unrelated:1396193588676788356>\n- </remove:1305218554303348806>"
-              },
-              {
-                "type": 14,
-                "divider": false,
-                "spacing": 2
-              },
-              {
-                "type": 10,
-                "content": "## Support Tags\n- **Unanswered** - Removed when a user (Non-OP) sends a message in the post.\n- **Not solved** - Added to posts when *Unanswered* is removed.\n- **Waiting for reply** - Posts with not solved where the last message is from OP and older than 10 mins.\n\nNote: *A post with needs-dev-review tag makes it excluded from all of those tags.*"
-              },
-              {
-                "type": 14,
-                "divider": false,
-                "spacing": 2
-              },
-              {
-                "type": 10,
-                "content": "## EPI\n- </epi enable:1341875324413153522>\n  - A msg will automatically send to posts when created saying that Sapphire is experiencing issues. Includes a custom text message if used or the link of  `status_message_id` - a message from ⁠`#status`.\n  - If *sticky* is `True`, a sticky message is created in ⁠`#general`. Both messages have a button for users to be notified when the issue is resolved.\n- </epi disable:1341875324413153522> - Ping all users that asked to be notified when the issue is resolved, stop the sticky message (if enabled).\n- </epi edit:1341875324413153522> - At least one need of the arguments need to be edited. To remove something, enter `-`."
-              }
-            ]
+      "type": 17,
+      "spoiler": false,
+      "accent_color": 7560435,
+      "components": [
+        {
+          "type": 10,
+          "content": "## <:sapphire_purple:1134949394228187197> Sapphire Helper features"
+        },
+        {
+          "type": 10,
+          "content": "**Main commands:**\n- </solved:1274997472162349079> & </unsolve:1281211280618950708>\n- </needs-dev-review:1281211280618950709>\n- </incomplete-post:1396193588676788355>\n- </unrelated:1396193588676788356>"
+        },
+        {
+          "type": 14,
+          "divider": false,
+          "spacing": 2
+        },
+        {
+          "type": 10,
+          "content": "## Support Tags\n- **Unanswered** - Removed when a user (Non-OP) sends a message in the post.\n- **Not solved** - Added to posts when *Unanswered* is removed.\n- **Waiting for reply** - Posts with not solved where the last message is from OP and older than 10 mins.\n\n**A post with needs-dev-review tag makes it excluded from all of those tags.*"
+        },
+        {
+          "type": 14,
+          "divider": false,
+          "spacing": 2
+        },
+        {
+          "type": 10,
+          "content": "## EPI\n- </epi enable:1341875324413153522>\n  - A msg will automatically send to posts when created saying that Sapphire is experiencing issues. Includes a custom text message if used or the link of  `status_message_id` - a message from ⁠`#status`.\n  - If *sticky* is `True`, a sticky message is created in ⁠`#general`. Both messages have a button for users to be notified when the issue is resolved.\n- </epi disable:1341875324413153522> - Ping all users that asked to be notified when the issue is resolved, stop the sticky message (if enabled).\n- </epi edit:1341875324413153522> - At least one need of the arguments need to be edited. To remove something, enter `-`."
+        },
+        {
+          "type": 14,
+          "divider": false,
+          "spacing": 2
+        },
+        {
+          "type": 10,
+          "content": "## ReadTheDamnRules (RTDR)\n- Creates a post for users that ask for help in public channels with all of the info that they provided. \n- It can be used by reacting ❓/❔ to the message or replying with <@1134607785947037848> `<post title, defaults to Support for ${username}>`.\n- React/reply to the oldest message as only that message and below (from the same user) will be shown in the post created."
+        },
+        {
+          "type": 14,
+          "divider": false,
+          "spacing": 2
+        },
+        {
+          "type": 10,
+          "content": "## Tags\nIt is like `/quick-replies` but CE's/Mods can create/edit them too.\nTag-related commands start with `/tag ...`. \n\nWhen using a tag (</tag use:1461675523322150916>), an **ephemeral** message will be sent with a *Confirm* button to send the tag.\n\n**Users can use tags too but with a cooldown.*"
+        },
+        {
+          "type": 14,
+          "divider": false,
+          "spacing": 2
+        },
+        {
+          "type": 10,
+          "content": "## Cluster Tracker\n- Provides **live information** on clusters.\n- Automatically sends a message here when clusters have been offline for more than set `threshold`+ ping opt-in users."
+        },
+        {
+          "type": 10,
+          "content": "**Commands:**\n- </cluster_tracker status:0>\n  - Shows important info on clusters.\n  - Status of *Dashboard* and *CB*\n  \n- </cluster_tracker search:0> - Search information about specific clusters\n- </cluster_tracker notify_me:0> - Add/remove yourself to be pinged when the threshold is hit."
+        },
+        {
+          "type": 14,
+          "divider": false,
+          "spacing": 2
         }
+      ]
+    }
     }
     </script>
   </head>
