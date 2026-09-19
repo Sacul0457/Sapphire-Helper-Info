@@ -11,103 +11,79 @@
 
     <script id="discord:component-embed" type="application/json">
     {
-      "components": [
-        {
-          "type": 17,
-          "components": [
-            {
-              "type": 10,
-              "content": "## <:sapphire_purple:1134949394228187197> Sapphire Helper features"
-            },
-            {
-              "type": 10,
-              "content": "These are the main/fairly simple to understand commands:\n- </solved:1274997472162349079> & </unsolve:1281211280618950708>\n- </needs-dev-review:1281211280618950709>\n- </lock:1351182554971115590> & </unlock:1351182554971115591>\n- </slowmode:1351182554971115592> (the channels are selected after executing the cmd)\n- </incomplete-post:1396193588676788355>\n- </unrelated:1396193588676788356>\n- </remove:1305218554303348806>"
-            }
-          ],
-          "spoiler": false,
-          "accent_color": 7560435
-        },
-        {
-          "type": 17,
-          "components": [
-            {
-              "type": 10,
-              "content": "## <#1023653278485057596> Tags"
-            },
-            {
-              "type": 10,
-              "content": "- **Unanswered** - Added to posts as soon as they are created and removed on a message from any user that isn't OP - can be used when searching for posts where OP hasn't received any answer yet.\n- **Not solved** - Added to posts when unanswered is removed, just a way to search for posts that aren't solved but also not ones where OP hasn't received any answer yet.\n- **Waiting for reply** - Posts with not solved where the last message is from OP and is older than 10 minutes - waiting for a reply from someone who is helping.\n\nNote: *A post having needs-dev-review tag makes it excluded from all of those tags.*"
-            }
-          ]
-        },
-        {
-          "type": 17,
-          "components": [
-            {
-              "type": 10,
-              "content": "## EPI\n- </epi enable:1341875324413153522>\n  - Embeds will automatically be sent to posts when they are created saying that Sapphire is experiencing issues. Includes a custom message (text) if it was used or the link of  `status_message_id` - a message from ⁠<#840710941069934632>.\n  - If *sticky* is `True` a sticky message is created in ⁠general﹙no-help﹚. Additionaly, both messages have a button for users to be notified when the issue is resolved.\n\n- </epi disable:1341875324413153522> - Ping all users that asked to be notified when the issue is resolved, stop the sticky message (if enabled). If `message` is used, it will be included in the message pinging the users.\n- </epi edit:1341875324413153522> - Update the current EPI config. At least one need of the arguments need to be edited. To remove something, enter `-`."
-            }
-          ],
-          "spoiler": false
-        },
-        {
-          "type": 17,
-          "components": [
-            {
-              "type": 10,
-              "content": "## ReadTheDamnRules (RTDR)"
-            },
-            {
-              "type": 10,
-              "content": "- Creates a post for users that ask for help in ⁠<#866339087732703252>, ⁠feedback (under any thread), ⁠support or any other public channel with all of the info (content and attachment) that they provided. \n- It can be triggered by adding ❓ or ❔ to the message or replying with <@1134607785947037848> `<post title, defaults to Support for ${username}>`.\n- Make sure to react/reply to the oldest/highest message as only that message and messages lower (from the same user) will be used in the new post."
-            }
-          ]
-        },
-        {
-          "type": 17,
-          "components": [
-            {
-              "type": 10,
-              "content": "### Tags"
-            },
-            {
-              "type": 10,
-              "content": "A tag is like `/quick-replies` but CE's/Mods can create/edit them too.\nTag-related commands will start with `/tag ...`. \n\nWhen using a tag (</tag use:1461675523322150916>), an **ephemeral** message will be sent with a *Confirm* button to send the tag.\n\nNote: *Users can use tags too but with a cooldown.*"
-            }
-          ]
-        },
-        {
-          "type": 17,
-          "components": [
-            {
-              "type": 10,
-              "content": "## Cluster Tracker"
-            },
-            {
-              "type": 10,
-              "content": "- Provides **live information** about clusters through its related commands.\n- Automatically sends a message here when clusters have been offline for more than set `threshold`+ ping opt in users.\n"
-            },
-            {
-              "type": 14,
-              "spacing": 1,
-              "divider": false
-            },
-            {
-              "type": 10,
-              "content": "**Commands:**\n- </cluster_tracker status:0>\n  - Shows offline clusters (if any)\n  - Top 5 slowest clusters\n  - Status of *Dashboard* and *CB*\n  - *Last received* and *Threshold*\n- </cluster_tracker search:0> - Search information about specific clusters\n- </cluster_tracker notify_me:0> - Add/remove yourself to be pinged when the threshold is hit.\n- </cluster_tracker websocket:0> - View debug informantion. Or connect/disconnect/force-disconnect the websocket."
-            }
-          ]
-        },
-        {
-          "type": 17,
-          "components": [
-            {
-              "type": 10,
-              "content": "### Code and Content\n- https://github.com/kiki0124/Sapphire-helper\n- [Full Command Docs](https://github.com/kiki0124/Sapphire-helper/blob/main/Documentation/commands.md)\n- [This link](https://github.com/Sacul0457/Sapphire-Helper-Info)"
-            }
-          ]
+        "component": {
+            "type": 17,
+            "spoiler": false,
+            "accent_color": 7560435
+            "components": [
+                {
+                    "type": 10,
+                    "content": "## <:sapphire_purple:1134949394228187197> Sapphire Helper features"
+                },
+                {
+                    "type": 10,
+                    "content": "These are the main/fairly simple to understand commands:\n- </solved:1274997472162349079> & </unsolve:1281211280618950708>\n- </needs-dev-review:1281211280618950709>\n- </lock:1351182554971115590> & </unlock:1351182554971115591>\n- </slowmode:1351182554971115592> (the channels are selected after executing the cmd)\n- </incomplete-post:1396193588676788355>\n- </unrelated:1396193588676788356>\n- </remove:1305218554303348806>"
+                },
+                {
+                    "type": 14,
+                    "spacing": 2,
+                    "divider": false
+                },
+                {
+                    "type": 10,
+                    "content": "## <#1023653278485057596> Tags\n- **Unanswered** - Added to posts as soon as they are created and removed on a message from any user that isn't OP - can be used when searching for posts where OP hasn't received any answer yet.\n- **Not solved** - Added to posts when unanswered is removed, just a way to search for posts that aren't solved but also not ones where OP hasn't received any answer yet.\n- **Waiting for reply** - Posts with not solved where the last message is from OP and is older than 10 minutes - waiting for a reply from someone who is helping.\n\nNote: *A post having needs-dev-review tag makes it excluded from all of those tags.*"
+                },
+                {
+                    "type": 14,
+                    "spacing": 2,
+                    "divider": false
+                },
+                {
+                    "type": 10,
+                    "content": "## EPI\n- </epi enable:1341875324413153522>\n  - Embeds will automatically be sent to posts when they are created saying that Sapphire is experiencing issues. Includes a custom message (text) if it was used or the link of  `status_message_id` - a message from ⁠<#840710941069934632>.\n  - If *sticky* is `True` a sticky message is created in ⁠general﹙no-help﹚. Additionaly, both messages have a button for users to be notified when the issue is resolved.\n- </epi disable:1341875324413153522> - Ping all users that asked to be notified when the issue is resolved, stop the sticky message (if enabled). If `message` is used, it will be included in the message pinging the users.\n- </epi edit:1341875324413153522> - Update the current EPI config. At least one need of the arguments need to be edited. To remove something, enter `-`."
+                },
+                {
+                    "type": 14,
+                    "spacing": 2,
+                    "divider": false
+                },
+                {
+                    "type": 10,
+                    "content": "## ReadTheDamnRules (RTDR)\n- Creates a post for users that ask for help in ⁠<#866339087732703252>, ⁠feedback (under any thread), ⁠support or any other public channel with all of the info (content and attachment) that they provided. \n- It can be triggered by adding ❓ or ❔ to the message or replying with <@1134607785947037848> `<post title, defaults to Support for ${username}>`.\n- Make sure to react/reply to the oldest/highest message as only that message and messages lower (from the same user) will be used in the new post."
+                },
+                {
+                    "type": 14,
+                    "spacing": 2,
+                    "divider": false
+                },
+                {
+                    "type": 10,
+                    "content": "## Tags\nA tag is like `/quick-replies` but CE's/Mods can create/edit them too.\nTag-related commands will start with `/tag ...`. \n\nWhen using a tag (</tag use:1461675523322150916>), an **ephemeral** message will be sent with a *Confirm* button to send the tag.\n\nNote: *Users can use tags too but with a cooldown.*"
+                },
+                {
+                    "type": 14,
+                    "spacing": 2,
+                    "divider": false
+                },
+                {
+                    "type": 10,
+                    "content": "## Cluster Tracker\n- Provides **live information** about clusters through its related commands.\n- Automatically sends a message here when clusters have been offline for more than set `threshold`+ ping opt in users."
+                },
+                {
+                    "type": 10,
+                    "content": "**Commands:**\n- </cluster_tracker status:0>\n  - Shows offline clusters (if any)\n  - Top 5 slowest clusters\n  - Status of *Dashboard* and *CB*\n  - *Last received* and *Threshold*\n- </cluster_tracker search:0> - Search information about specific clusters\n- </cluster_tracker notify_me:0> - Add/remove yourself to be pinged when the threshold is hit.\n- </cluster_tracker websocket:0> - View debug informantion. Or connect/disconnect/force-disconnect the websocket."
+                },
+                {
+                    "type": 14,
+                    "spacing": 2,
+                    "divider": false
+                },
+                {
+                    "type": 10,
+                    "content": "### Code & Content\n- https://github.com/kiki0124/Sapphire-helper\n- [Full Command Docs](https://github.com/kiki0124/Sapphire-helper/blob/main/Documentation/commands.md)\n- [This link](https://github.com/Sacul0457/Sapphire-Helper-Info)"
+                }
+            ],
         }
-      ]
     }
     </script>
   </head>
