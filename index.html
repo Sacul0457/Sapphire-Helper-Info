@@ -41,42 +41,6 @@
               {
                 "type": 10,
                 "content": "## EPI\n- </epi enable:1341875324413153522>\n  - A msg will automatically send to posts when created saying that Sapphire is experiencing issues. Includes a custom text message if used or the link of  `status_message_id` - a message from ⁠`#status`.\n  - If *sticky* is `True`, a sticky message is created in ⁠`#general`. Both messages have a button for users to be notified when the issue is resolved.\n- </epi disable:1341875324413153522> - Ping all users that asked to be notified when the issue is resolved, stop the sticky message (if enabled).\n- </epi edit:1341875324413153522> - At least one need of the arguments need to be edited. To remove something, enter `-`."
-              },
-              {
-                "type": 14,
-                "divider": false,
-                "spacing": 2
-              },
-              {
-                "type": 10,
-                "content": "## ReadTheDamnRules (RTDR)\n- Creates a post for users that ask for help in public channels with all of the info that they provided. \n- It can be used by reacting ❓/❔ to the message or replying with <@1134607785947037848> `<post title, defaults to Support for ${username}>`.\n- React/reply to the oldest/highest message as only that message and below (from the same user) will be shown in the post created."
-              },
-              {
-                "type": 14,
-                "divider": false,
-                "spacing": 2
-              },
-              {
-                "type": 10,
-                "content": "## Tags\nA tag is like `/quick-replies` but CE's/Mods can create/edit them too.\nTag-related commands start with `/tag ...`. \n\nWhen using a tag (</tag use:1461675523322150916>), an **ephemeral** message will be sent with a *Confirm* button to send the tag.\n\nNote: *Users can use tags too but with a cooldown.*"
-              },
-              {
-                "type": 14,
-                "divider": false,
-                "spacing": 2
-              },
-              {
-                "type": 10,
-                "content": "## Cluster Tracker\n- Provides **live information** on clusters.\n- Automatically sends a message here when clusters have been offline for more than set `threshold`+ ping opt-in users."
-              },
-              {
-                "type": 10,
-                "content": "**Commands:**\n- </cluster_tracker status:0>\n  - Shows offline clusters (if any)\n  - Top 5 slowest clusters\n  - Status of *Dashboard* and *CB*\n  - *Last received* and *Threshold*\n- </cluster_tracker search:0> - Search information about specific clusters\n- </cluster_tracker notify_me:0> - Add/remove yourself to be pinged when the threshold is hit.\n- </cluster_tracker websocket:0> - View debug information. Or connect/disconnect the websocket."
-              },
-              {
-                "type": 14,
-                "divider": false,
-                "spacing": 2
               }
             ]
         }
